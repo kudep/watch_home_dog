@@ -1,0 +1,10 @@
+[Unit]
+Description=Alarm Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /home/kudep/Documents/watch_home_dog/alarm_pygame.py
+
+[Install]
+WantedBy=multi-user.target
